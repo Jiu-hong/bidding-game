@@ -13,7 +13,6 @@ import (
 	"challenge/biddingpk"
 )
 
-const GASLIMIT = 3000000
 
 func Bid(_privateKey string ,_contractAddress string, _biddingAmount string) (string, error) {
 	envs, err := godotenv.Read(".env")
