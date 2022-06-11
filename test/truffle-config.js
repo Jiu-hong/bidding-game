@@ -50,6 +50,11 @@ module.exports = {
         new HDWalletProvider(PRIVATE_KEY, "https://nodeapi.test.energi.network/v1/jsonrp"),
       network_id: 49797,
     },
+    developmentws: {
+      provider: () =>
+        new HDWalletProvider(PRIVATE_KEY, "wss://kovan.infura.io/ws/v3/c1705cd194dc4d8b9bad0ad140770896"),
+        network_id: "*",
+    },
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
