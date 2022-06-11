@@ -6,6 +6,7 @@ module.exports = async function (deployer) {
   const bidding = await Bidding.deployed()
   const contract_address = bidding.address
 
+  // below has not effects... Don't know why
  web3.eth.subscribe('logs', {
   address: contract_address,
   topics: [web3.utils.keccak256("HighestBidIncreased(address,uint256,uint256)")]
